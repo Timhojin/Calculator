@@ -7,6 +7,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
+    font-family: "Arial";
 }
 
 .body {
@@ -14,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 400px;
+    height: 430px;
     background-color: rgb(43, 40, 40);
     padding: 24px;
     border: black solid 5px;
@@ -45,4 +47,72 @@ body {
     flex: 1;
     text-align: center;
     padding: 5px 0;
+}
+
+.rest {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seven-nine,
+.four-six {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.nums {
+    background-color: rgb(117, 110, 110);
+    color: rgb(183, 177, 177);
+    border: black solid 5px;
+    padding: 5px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equalitySpace {
+    display: flex;
+    flex: 2.2;
+    gap: 20px;
+}
+
+.numbers {
+    flex: 6 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.one-three,
+.zero-dot {
+    display: flex;
+    gap: 20px;
+    width: 220px;
+    height: 50px;
+}
+
+.zero {
+    background-color: rgb(117, 110, 110);
+    color: rgb(183, 177, 177);
+    border: black solid 5px;
+    padding: 5px;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equal {
+    width: 60px;
+    background-color: rgb(167, 6, 6);
+    color: rgb(183, 177, 177);
+    border: black solid 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
