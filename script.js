@@ -49,12 +49,28 @@ function prepareForOperation(x) {
 
 function displayResult() {
     secondNum = displayValue;
+    console.log(firstNum);
+    console.log(secondNum);
     displayValue = 0;
-    let result = operate(operator, firstNum, secondNum);
+    result = operate(operator, firstNum, secondNum);
     onScreen.textContent = result;
-    firstNum = result;
+    displayValue = result;
 }
 
+function clearDisplay() {
+    firstNum = 0;
+    secondNum = 0;
+    displayValue = 0;
+    operator = '';
+    onScreen.textContent = "";
+}
+
+function deleteScreen() {
+    displayValue = displayValue / 10 - displayValue % 10 / 10;
+    onScreen.textContent = displayValue;
+}
+
+let result = 0;
 let firstNum = 0;
 let secondNum = 0;
 let operator = '';
@@ -94,3 +110,8 @@ divideButton.addEventListener("click", () => {prepareForOperation('/')});
 
 const equalButton = document.querySelector(".equal");
 equalButton.addEventListener("click", () => displayResult());
+
+const clearButton = document.querySelector(".AC");
+clearButton.addEventListener("click", () => clearDisplay());
+const deleteButton = document.querySelector(".DEL");
+deleteButton.addEventListener("click", () => deleteScreen());
